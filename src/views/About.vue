@@ -12,7 +12,7 @@
         <p>main模块下的detail模块中的total{{detailtotal}}</p>
         <p @click="setmain">根commit</p>
         <p @click="set">模块comit</p>
-        <p @click="setchild">模块下的子模块的comit</p>
+        <p @click="setchild">模块下的子模块的comitwqe</p>
     </div>
 </template>
 <script>
