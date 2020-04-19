@@ -1,0 +1,108 @@
+/**
+ * @author jm
+ * @create 2019-05-06 9:36
+ * @desc   颜色，字体，背景的配置文件
+ */
+//自定义渐变色角度
+$deg: 90deg;
+$deg1: 60deg;
+$deg2: 70deg;
+// 页面颜色定义
+$theme-color: var(--first-color);
+$theme-08color: var(--first-color);
+$theme-login-color: #fafdec;
+$theme-color1: #fafdec;
+$theme-color2: #6183E0;
+$theme-color3: var(--first-color);
+$theme-color-image: var(--second-color);
+$theme-color-1: #EFABFF;
+$theme-color-1-image: #6B43FA;
+$theme-color-2: #A5B6E6;
+$theme-color-2-image: #455D99;
+$theme-color-3: var(--first-color);
+$theme-color-3-image:var(--second-color);
+$warning-color: #FF9918;
+$success-color: #FF9918;
+$decorate-color: #42A5F5;
+$message-color: #333333;
+$basics-black-color: #000000;
+$basics-white-color: #FFFFFF;
+$basics-08white-color:rgba(255,255,255,0.8);
+$transparent-color: transparent;
+$search-color: #E6E6E6;
+$item-color: #F6F6F6;
+$theme-color-5: #D1D1D1;
+$bg-color: #E8E8E8;
+$theme-color-5: #EFF3F6;
+$theme-color-6: #7F90A4;
+$theme-color-7: #dfeae1;
+$theme-BrightYellow-color:#d7e81b;
+$theme-grey-color:#888888;
+$theme-red-color:#FF0000;
+$theme-paleGrey-color:#EFEFEF;
+$theme-lightGreen-color:#c6deca;
+$theme-paleGreen-color:#f0f6f1;
+$theme-oxbloodRed-color:#d81b1b;
+$theme-green-color:#00a847;
+$theme-lightGrey-color:#CCCCCC;
+$theme-color-8:#F5F7FA;
+// 字体颜色定义
+$theme-font-color: #333333;
+$theme-font-color1: #9B65FF;
+$theme-font-color2: #6183E0;
+$theme-font-color3:var(--first-color);
+$theme-font-color4: #000000;
+$theme-font-color5: #B5B5B5;
+$theme-font-color6: #999999;
+$common-font-color: #666666;
+$next-font-color: #666666;
+$orange-font-color: var(--first-color);
+$white-font-color: #FFFFFF;
+$transparent-font-color: #FFFFFF;
+$lightGrey-font-color:#CCCCCC;
+
+// 边框颜色定义
+$first-border-color: #B5B5B5;
+$second-border-color: #D1D1D1;
+$third-border-color: var(--first-color);
+$four-border-color: #E8E8E8;
+$border-color1: #9B65FF;
+$border-color2: #6183E0;
+$border-color3: var(--first-color);
+$border-color4: #E6E6E6;
+$border-color5: #D6D7D8;
+$border-color6: #DCDFE6;
+
+
+// 区分底色
+$split-background-color: #E6E6E6;
+
+// 字体大小定义
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-medium-x: 16px;
+$font-size-large: 18px;
+$font-size-large-xs: 20px;
+$font-size-large-x: 22px;
+
+// 边框圆角定义
+$small-border-radius: 4px;
+$middle-s-border-radius: 6px;
+$middle-border-radius: 8px;
+$large-border-radius: 30px;
+$circle-border-radius: 50%;
+$basics-border-radius:2px;
+
+// 投影样式定义
+$basics-shadow: 0px 8px 12px 0px var(--first-color);
+$basics-shadow1: 0px 8px 12px 0px #9B65FF;
+$basics-shadow2: 0px 8px 12px 0px #6183E0;
+$basics-shadow3: 0px 8px 12px 0px var(--first-color);
+//字符限制
+
+//:export {
+//  default_font_color: $theme-font-color;
+//  theme1_font_color: $theme-font-color1;
+//  theme2_font_color: $theme-font-color2;
+//  theme3_font_color: $theme-font-color3;
+//}

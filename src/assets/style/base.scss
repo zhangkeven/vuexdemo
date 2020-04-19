@@ -1,0 +1,315 @@
+@import "variable";
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+html,body,#app,#main{
+  height: 100%;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-size: $font-size-small;
+  font-family: 'Microsoft YaHei', 'Roboto', 'PingFang SC', 'Microsoft YaHei UI', 'Source Han Sans CN', '-apple-system', 'BlinkMacSystemFont', 'Arial', 'sans-serif';
+  user-select: none;
+  background: $basics-white-color;
+  color: $theme-font-color;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+li {
+  list-style: none
+}
+
+i {
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-size-medium;
+}
+
+input {
+  outline: none;
+  background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#mm_img_block {
+  display: none;
+}
+
+.van-dialog {
+  max-width: 300px !important;
+}
+
+.el-icon-arrow-right.el-cascader-node__postfix {
+  top: 10px;
+  bottom: 10px;
+}
+
+.el-cascader-node.in-active-path, .el-cascader-node.is-active, .el-cascader-node.is-selectable.in-checked-path {
+  @include font_color($theme-font-color3);
+}
+
+.el-cascader .el-input .el-input__inner:focus, .el-cascader .el-input.is-focus .el-input__inner {
+  @include border-color($theme-font-color3);
+}
+
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+  @include border-color($theme-font-color3);
+}
+
+.el-loading-spinner .el-loading-text {
+  @include font_color($theme-font-color3);
+  margin: 0.1875rem 0;
+  font-size: 18px !important;
+}
+
+.el-loading-spinner i {
+  @include font_color($theme-font-color3);
+  font-size: 25px !important;
+}
+
+.el-switch.is-checked .el-switch__core {
+  @include border-color($theme-font-color3);
+  @include theme-bg-color($theme-font-color3);
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  @include font_color($theme-font-color3);
+}
+
+.el-switch__core {
+  height: 12px;
+  width: 40px !important;
+}
+
+.el-table .cell {
+  white-space: pre-line; /*保留换行符*/
+}
+
+.el-switch__core:after {
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.24);
+  top: -7px;
+  left: -2px;
+}
+
+.el-switch__label.is-active {
+  @include font_color($theme-font-color3);
+}
+
+.no-border {
+  .el-input__inner {
+    border: 0;
+    text-align: right;
+    padding: 0;
+  }
+
+  .active .el-input__inner {
+    @include font_color($theme-font-color3);
+  }
+
+  .el-input__suffix {
+    right: -5px;
+  }
+
+  .el-input .el-input__clear {
+    @include font_color($theme-font-color3);
+  }
+}
+
+.el-date-editor .el-range-separator {
+  width: 10% !important;
+}
+
+.el-date-editor .el-range-input {
+  width: 80% !important;
+}
+
+.el-picker-panel__shortcut {
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  line-height: 1.75rem;
+  font-size: 0.875rem;
+  color: #606266;
+  padding-left: 0.75rem;
+  text-align: center !important;
+  outline: 0;
+  cursor: pointer;
+}
+
+.el-picker-panel__shortcut:hover {
+  @include font_color($theme-font-color3)
+}
+
+.el-picker-panel__icon-btn:hover {
+  @include font_color($theme-font-color3);
+}
+
+.el-date-table td.available:hover {
+  @include font_color($theme-font-color3);
+}
+
+.el-date-table td.end-date span,
+.el-date-table td.start-date span {
+  @include theme-bg-color($theme-font-color3);
+}
+
+.el-date-table td.today span {
+  @include font_color($theme-font-color3);
+}
+
+.el-date-table td.today.end-date span, .el-date-table td.today.start-date span {
+  color: #FFF !important;
+}
+
+.el-select-dropdown__item.selected {
+  @include font_color($theme-font-color3);
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  @include border-color($theme-font-color3);
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  @include border-color($theme-font-color3);
+  @include theme-bg-color($theme-font-color3);
+}
+
+.el-radio__input.is-checked + .el-radio__label {
+  @include font_color($theme-font-color3);
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  @include theme-bg-color($theme-font-color3)
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  @include theme-bg-color($theme-font-color3);
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  @include theme-bg-color($theme-font-color3);
+  @include border-color($theme-font-color3);
+}
+
+.el-checkbox__inner:hover {
+  @include border-color($theme-font-color3);
+}
+
+.el-checkbox__input.is-focus .el-checkbox__inner {
+  @include border-color($theme-font-color3);
+}
+
+.search-container, .searchContainer {
+  .el-icon-arrow-up:before {
+    content: '\e78f';
+    color: #333;
+  }
+
+  .el-input__inner {
+    border: 0;
+  }
+}
+
+.red-btn {
+  @include theme-bg-color($theme-font-color3);
+  @include border-color($theme-font-color3);
+}
+
+.red-btn:hover {
+  @include border-color($theme-font-color3);
+  @include theme-bg-color($theme-font-color3);
+}
+
+//给饿了么多级联动  添加高度
+div .el-scrollbar__wrap {
+
+}
+
+/* ==================
+          布局
+ ==================== */
+
+/*  -- flex弹性布局 -- */
+.flex {
+  display: flex;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}

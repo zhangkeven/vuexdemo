@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*引入配置*/
+@import "./variable";
+// 主题渐变色
+@mixin theme-color-gradient($deg,$color1,$color2) {
+  background-image: linear-gradient($deg, $color1 0%, $color2 100%);
+	[data-theme="theme1"] & {
+	  background-image: linear-gradient($deg, $theme-color-1 0%, $theme-color-1-image 100%);
+	}
+	[data-theme="theme2"] & {
+	  background-image: linear-gradient($deg, $theme-color-2 0%, $theme-color-2-image 100%);
+	}
+	[data-theme="theme3"] & {
+	  background-image: linear-gradient($deg, $theme-color-3 0%, $theme-color-3-image 100%);
+	}
+}
+// 主题色
+@mixin theme-bg-color($color) {
+  background-color: $color;
+	[data-theme="theme1"] & {
+	  background-color: $theme-color1;
+	}
+	[data-theme="theme2"] & {
+	  background-color: $theme-color2;
+	}
+	[data-theme="theme3"] & {
+	  background-color: $theme-color3;
+	}
+}
+//边框颜色
+@mixin border-color($color) {
+	border-color: $color;
+	[data-theme="theme1"] & {
+		border-color: $border-color1;
+	}
+	[data-theme="theme2"] & {
+		border-color: $border-color2;
+	}
+	[data-theme="theme3"] & {
+		border-color: $border-color3;
+	}
+}
+ // 主题阴影
+ @mixin theme-color-shadow($color) {
+   box-shadow:$color;
+ 	[data-theme="theme1"] & {
+ 	  box-shadow:$basics-shadow1;
+ 	}
+ 	[data-theme="theme2"] & {
+ 	  box-shadow:$basics-shadow2;
+ 	}
+ 	[data-theme="theme3"] & {
+ 	  box-shadow:$basics-shadow3;
+ 	}
+ }
+/*通过该函数设置字体颜色，后期方便统一管理；*/
+@mixin font_color($color){
+	color:$color;
+  [data-theme="theme1"] & {
+    color:$theme-font-color1;
+  }
+  [data-theme="theme2"] & {
+    color:$theme-font-color2;
+  }
+  [data-theme="theme3"] & {
+    color:$theme-font-color3;
+  }
+}
+@mixin stroke_color($color){
+  stroke:$color;
+  [data-theme="theme1"] & {
+    stroke:$theme-font-color1;
+  }
+  [data-theme="theme2"] & {
+    stroke:$theme-font-color2;
+  }
+  [data-theme="theme3"] & {
+    stroke:$theme-font-color3;
+  }
+}
+
+@mixin stroke_color{
+
+}
+/*整体剧中 - 上下左右居中*/
+@mixin overall_centring{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
